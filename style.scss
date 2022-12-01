@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$cyanDark: hsl(179, 100%, 13%);
+$white: hsla(0, 0%, 100%, 0.75);
+$lightGray: hsl(0, 0%, 95%);
+$font-size: 0.938rem;
+
+html {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: $white;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 475px;
+  overflow: hidden;
+  border-radius: 0.7rem;
+}
+
+.card {
+
+  padding: 2.5rem;
+
+  &_orange {
+    background-color: $orange;
+  }
+
+  &_cyan {
+
+    background-color: $cyan;
+
+    &-dark {
+      background-color: $cyanDark;
+    }
+
+  }
+
+  &__header {
+    text-transform: uppercase;
+    color: $lightGray;
+    font-family: 'Big Shoulders Display', cursive;
+  }
+
+  &__text {
+    color: $white;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__button {
+
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: $lightGray;
+    border-radius: 1.5rem;;
+
+    &_orange {
+      color: $orange;
+    }
+
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .component {
+    flex-direction: row;
+    max-width: 60%;
+  }
+  
+}

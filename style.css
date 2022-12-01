@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 475px;
+  overflow: hidden;
+  border-radius: 0.7rem;
+}
+
+.card {
+  padding: 2.5rem;
+}
+
+.card_orange {
+  background-color: #e38826;
+}
+
+.card_cyan {
+  background-color: #006970;
+}
+
+.card_cyan-dark {
+  background-color: #004241;
+}
+
+.card__header {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.card__text {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.card__button {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+}
+
+.card__button_orange {
+  color: #e38826;
+}
+
+@media (min-width: 1440px) {
+  .component {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
