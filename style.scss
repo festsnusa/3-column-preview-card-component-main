@@ -67,6 +67,14 @@ body {
       color: $orange;
     }
 
+    &_cyan {
+      color: $cyan;
+
+      &-dark {
+        color: $cyanDark;
+      }
+    }
+
   }
 
 }

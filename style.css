@@ -64,6 +64,14 @@ body {
   color: #e38826;
 }
 
+.card__button_cyan {
+  color: #006970;
+}
+
+.card__button_cyan-dark {
+  color: #004241;
+}
+
 @media (min-width: 1440px) {
   .component {
     -webkit-box-orient: horizontal;
